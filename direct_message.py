@@ -1,4 +1,4 @@
-import webbrowser
+
 import os
 while True:
     print("                 \033[28mDirect message sender\033[28m  ")
@@ -46,7 +46,7 @@ while True:
 
 
     whatsapp='https://api.whatsapp.com/send?phone=' +new_number + '&text=' +text_sent
-    webbrowser.open(whatsapp)
+    os.system("xdg-open"+whatsapp)
     os.system("clear")
     print("                    \033[1mDONE !!!!\033[1m")
     print("\033[91m                   |---------|\033[91m")
